@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A0A2EA3629857A84000D7C72 /* Cry+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0A2EA3429857A83000D7C72 /* Cry+CoreDataClass.swift */; };
+		A0A2EA3729857A84000D7C72 /* Cry+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0A2EA3529857A84000D7C72 /* Cry+CoreDataProperties.swift */; };
+		A0A2EA392985958A000D7C72 /* Table.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0A2EA382985958A000D7C72 /* Table.swift */; };
+		A0BA626229B7F23500817E56 /* max.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0BA626129B7F23500817E56 /* max.swift */; };
 		A0EF85FE298472EF0007E29C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0EF85FD298472EF0007E29C /* AppDelegate.swift */; };
 		A0EF8600298472EF0007E29C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0EF85FF298472EF0007E29C /* SceneDelegate.swift */; };
 		A0EF8602298472EF0007E29C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0EF8601298472EF0007E29C /* ViewController.swift */; };
@@ -17,6 +21,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A0A2EA3429857A83000D7C72 /* Cry+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Cry+CoreDataClass.swift"; sourceTree = "<group>"; };
+		A0A2EA3529857A84000D7C72 /* Cry+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Cry+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		A0A2EA382985958A000D7C72 /* Table.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Table.swift; sourceTree = "<group>"; };
+		A0BA626129B7F23500817E56 /* max.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = max.swift; sourceTree = "<group>"; };
 		A0EF85FA298472EF0007E29C /* Cry Log.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Cry Log.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0EF85FD298472EF0007E29C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A0EF85FF298472EF0007E29C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -42,6 +50,8 @@
 		A0EF85F1298472EE0007E29C = {
 			isa = PBXGroup;
 			children = (
+				A0A2EA3429857A83000D7C72 /* Cry+CoreDataClass.swift */,
+				A0A2EA3529857A84000D7C72 /* Cry+CoreDataProperties.swift */,
 				A0EF85FC298472EF0007E29C /* Cry Log */,
 				A0EF85FB298472EF0007E29C /* Products */,
 			);
@@ -66,6 +76,8 @@
 				A0EF860B298472F10007E29C /* LaunchScreen.storyboard */,
 				A0EF860E298472F10007E29C /* Info.plist */,
 				A0EF8606298472EF0007E29C /* Cry_Log.xcdatamodeld */,
+				A0A2EA382985958A000D7C72 /* Table.swift */,
+				A0BA626129B7F23500817E56 /* max.swift */,
 			);
 			path = "Cry Log";
 			sourceTree = "<group>";
@@ -141,9 +153,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A0A2EA3629857A84000D7C72 /* Cry+CoreDataClass.swift in Sources */,
+				A0A2EA392985958A000D7C72 /* Table.swift in Sources */,
+				A0BA626229B7F23500817E56 /* max.swift in Sources */,
 				A0EF8602298472EF0007E29C /* ViewController.swift in Sources */,
 				A0EF85FE298472EF0007E29C /* AppDelegate.swift in Sources */,
 				A0EF8600298472EF0007E29C /* SceneDelegate.swift in Sources */,
+				A0A2EA3729857A84000D7C72 /* Cry+CoreDataProperties.swift in Sources */,
 				A0EF8608298472EF0007E29C /* Cry_Log.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -294,11 +310,13 @@
 				DEVELOPMENT_TEAM = T46S283FU3;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Cry Log/Info.plist";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIRequiresFullScreen = NO;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -306,9 +324,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "idrismahamdi.Cry-Log";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -322,11 +343,13 @@
 				DEVELOPMENT_TEAM = T46S283FU3;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Cry Log/Info.plist";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIRequiresFullScreen = NO;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -334,9 +357,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "idrismahamdi.Cry-Log";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
